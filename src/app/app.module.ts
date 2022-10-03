@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { ListComponent } from './views/list/list.component';
 import { EntreeComponent } from './views/list/entree/entree.component';
+import { LoadScriptsService } from './shared/services/load-scripts.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { EntreeComponent } from './views/list/entree/entree.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [LoadScriptsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
